@@ -48,7 +48,7 @@ function App() {
         <div className="w-full text-right">
           <svg
             width="87"
-            height="60"
+            height="40"
             viewBox="0 0 87 60"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ function App() {
             </defs>
           </svg>
         </div>
-        <div className="pb-9">
+        <div className="pb-3">
           <svg
             className="w-full flex justify-center items-center"
             width="201"
@@ -111,9 +111,9 @@ function App() {
         </p>
         <form
           onSubmit={formik.handleSubmit}
-          className="w-full h-full flex flex-col justify-around lg:justify-start lg:gap-5 items-center"
+          className="w-full lg:h-[45%] h-full flex flex-col justify-around lg:justify-start lg:gap-5 items-center"
         >
-          <div className="w-full flex flex-col justify-center items-center gap-6  lg:gap-5 xl:gap-9">
+          <div className="w-full h-full flex flex-col justify-start items-center gap-6  lg:gap-5 xl:gap-9">
             <FormInput
               label="نام کاربری"
               placeholder="نام خود را وارد نمایید"
@@ -144,7 +144,7 @@ function App() {
           </div>
           <button
             disabled={!formik.isValid}
-            className="mb-6 w-full h-14 lg:w-48 lg:cursor-pointer rounded-xl cursor-default bg-gradient-to-r from-[#2393B0] to-[#087592] px-4 py-3 text-lg text-white shadow-md"
+            className="mb-8 w-full h-14 lg:w-48 lg:cursor-pointer rounded-xl cursor-default bg-gradient-to-r from-[#2393B0] to-[#087592] px-4 py-3 text-lg text-white shadow-md"
             type="submit"
           >
             {!isLoading ? (
