@@ -111,7 +111,7 @@ function App() {
         </p>
         <form
           onSubmit={formik.handleSubmit}
-          className="w-full h-[70%] flex flex-col justify-between lg:justify-start lg:gap-5 items-center"
+          className="w-full h-full flex flex-col justify-around lg:justify-start lg:gap-5 items-center"
         >
           <div className="w-full flex flex-col justify-center items-center gap-6  lg:gap-5 xl:gap-9">
             <FormInput
