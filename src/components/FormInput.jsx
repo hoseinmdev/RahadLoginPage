@@ -77,7 +77,7 @@ const Input = ({
         <div
           className={`flex w-full items-center justify-center overflow-hidden rounded-2xl border bg-transparent ${
             error && touched && error ? "border-[#FB2047]" : "border-[#C2C7CC]"
-          } p-3 focus-within:border-gray-500 lg:border-2 lg:bg-neutral-100 lg:p-4 `}
+          } p-3 lg:border-2 lg:bg-neutral-100 lg:p-4 `}
         >
           <input
             autoComplete="off"
@@ -89,7 +89,7 @@ const Input = ({
             onChange={onChange}
             onBlur={onBlur}
             value={value}
-            style={{ width: type === "password" ? "90%" : "100%" }}
+            style={{ width: type === "password" ? "95%" : "100%" }}
           />
           {renderIcon()}
         </div>

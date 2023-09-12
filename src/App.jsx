@@ -125,20 +125,22 @@ function App() {
               touched={formik.touched.text}
               type="text"
             />
-            <FormInput
-              label="رمز عبور"
-              placeholder="رمز عبور خود را وارد نمایید"
-              name="password"
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              value={formik.values.password}
-              error={formik.errors.password}
-              touched={formik.touched.password}
-              type="password"
-            />
-            <p className="w-full text-left text-[#00519A] pl-2">
-              فراموشی رمز عبور
-            </p>
+            <div className="w-full flex flex-col justify-center items-center gap-3">
+              <FormInput
+                label="رمز عبور"
+                placeholder="رمز عبور خود را وارد نمایید"
+                name="password"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.password}
+                error={formik.errors.password}
+                touched={formik.touched.password}
+                type="password"
+              />
+              <p className="w-full text-left text-[#00519A] pl-2">
+                فراموشی رمز عبور
+              </p>
+            </div>
           </div>
           <button
             disabled={!formik.isValid}
