@@ -111,7 +111,7 @@ function App() {
         </p>
         <form
           onSubmit={formik.handleSubmit}
-          className="w-full lg:h-[45%] h-full flex flex-col justify-around lg:justify-start lg:gap-5 items-center"
+          className="w-full lg:h-[45%] h-[80%] flex flex-col justify-around lg:justify-start lg:gap-5 items-center"
         >
           <div className="w-full h-full flex flex-col justify-start items-center gap-6  lg:gap-5 xl:gap-9">
             <FormInput
@@ -144,7 +144,7 @@ function App() {
           </div>
           <button
             disabled={!formik.isValid}
-            className="mb-12 w-full h-14 lg:w-48 lg:cursor-pointer rounded-xl cursor-default bg-gradient-to-r from-[#2393B0] to-[#087592] px-4 py-3 text-lg text-white shadow-md"
+            className="mb-6 w-full h-14 lg:w-48 lg:cursor-pointer rounded-xl cursor-default bg-gradient-to-r from-[#2393B0] to-[#087592] px-4 py-3 text-lg text-white shadow-md"
             type="submit"
           >
             {!isLoading ? (
