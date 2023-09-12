@@ -142,7 +142,7 @@ function App() {
           </div>
           <button
             disabled={!formik.isValid}
-            className="mb-6 w-full h-14 lg:w-48 lg:cursor-pointer rounded-xl cursor-default bg-gradient-to-r from-[#2393B0] to-[#087592] px-4 py-3 text-lg text-white shadow-md"
+            className=" w-full h-14 lg:w-48 lg:cursor-pointer rounded-xl cursor-default bg-gradient-to-r from-[#2393B0] to-[#087592] px-4 py-3 text-lg text-white shadow-md"
             type="submit"
           >
             {!isLoading ? (
